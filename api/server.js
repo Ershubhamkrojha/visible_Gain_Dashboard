@@ -18,12 +18,14 @@ dotenv.config();
 const { error } = pkg;
 const app = express();
 const PORT = process.env.PORT || 5000;
-console.log(process.env.allowedOrigins)
+
 // Middleware
+const allowedOrigins = ['https://visibledaishboard.hariastha.com'];  // Replace with your actual Hostinger frontend URL
+
 app.use(cors({
-    origin: process.env.allowedOrigins,
-  
-    credentials: true, // Allow credentials if needed
+    origin: allowedOrigins,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }));
 
   
