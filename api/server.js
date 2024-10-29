@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'https://merry-dusk-e8dba6.netlify.app', // Adjust this to your Vite dev server's URL
+    origin: 'https://visibledaishboard.hariastha.com/', // Adjust this to your Vite dev server's URL
     credentials: true, // Allow credentials to be sent
 }));
 
