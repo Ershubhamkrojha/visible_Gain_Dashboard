@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-const allowedOrigins = ['https://visibledaishboard.hariastha.com'];  // Replace with your actual Hostinger frontend URL
+const allowedOrigins = 'https://visibledaishboard.hariastha.com';  // Replace with your actual Hostinger frontend URL
 
 app.use(cors({
     origin: allowedOrigins,
