@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:5173', // Adjust this to your Vite dev server's URL
+    origin: 'https://friendly-sawine-920c6e.netlify.app', // Adjust this to your Vite dev server's URL
     credentials: true, // Allow credentials to be sent
 }));
 
