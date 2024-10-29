@@ -21,8 +21,9 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'https://visibledaishboard.hariastha.com/', // Adjust this to your Vite dev server's URL
-    credentials: true, // Allow credentials to be sent
+    origin: process.env.allowedOrigins,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow credentials if needed
 }));
 
   
