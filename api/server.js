@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors({
     origin: process.env.allowedOrigins,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  
     credentials: true, // Allow credentials if needed
 }));
 
